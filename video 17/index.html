@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        div{
+            background-color: rgb(0, 255, 229);
+        }
+        /* Class Selector */
+        .red {
+            background-color: red;
+        }
+
+        /* Id Selector */
+        #green {
+            background-color: green;
+        }
+
+        /* Child Selector */
+        div > p {
+            color: rgb(9, 255, 0);
+            background-color: rgb(255, 0, 0);
+        }
+
+        /* Descendant Selctor */
+        div p {
+            color: yellow;
+            background-color: blue;
+        }
+
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited {
+            color: rgb(220, 207, 20);
+        }
+
+        a:link {
+            color: rgb(0, 60, 255);
+        }
+
+        a:active {
+            background-color: aqua;
+        }
+
+        a:hover {
+            background-color: hotpink;
+        }
+
+        p:first-child {
+            background-color: rgb(29, 0, 247);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        This is a normal div
+    </div>
+    <main class="one">
+        <p>I am First</p>
+        <p>I am Second</p>
+    </main>
+    <div class="red">
+        I am a div
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti molestiae nulla aliquid animi est!
+                Voluptate ab enim officiis quas delectus, incidunt aliquid sint eligendi ipsum velit, distinctio
+                voluptas. Voluptate, unde!</p>
+        </article>
+    </div>
+    <div id="green">
+        I am another div
+        <p>Hey SOOOYAAMM HERE</p>
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.instagram4.com">Go to Instagram</a>
+    <div>
+        <p>Hey Its Soyam</p>
+    </div>
+</body>
+
+</html>
