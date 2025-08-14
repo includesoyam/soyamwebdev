@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Multicolored Navbar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+    </style>
+    <style>
+        :root {
+            --primary-color: blueviolet;
+            --sec-color: rgb(216, 201, 255);
+            --textcolor: white;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--sec-color);
+        }
+
+        .navbar {
+            background-color: var(--primary-color);
+            height: 30px;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+        }
+
+        a {
+            text-decoration: none;
+            margin: 15px 10px;
+            padding: 5px;
+            color: var(--textcolor);
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Contact Us</a></li>
+                <li><a href="/">Guidelines</a></li>
+                <li><a href="/">My Gears</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Solving The Exercise 4</h1>
+    </section>
+</body>
+
+</html>
