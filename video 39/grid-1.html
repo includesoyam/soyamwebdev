@@ -7,10 +7,19 @@
     <title>CSS Grid-1</title>
     <style>
         .container {
+            width: 80vw;
+            height: 90vh;
             border: 3px solid black;
             display: grid;
-            grid-template-columns: [first] 100px [second] 200px;
-            grid-template-rows: 100px 100px 200px;
+            /* grid-template-columns: repeat(4,1fr) */
+            grid-template-columns: repeat(4, minmax(100px, 1fr));
+            place-content: center;
+            /* row-gap: 10px;
+            column-gap: 50px; */
+            /* justify-items: center;
+            align-items: center; */
+            /* grid-template-columns: [first] 100px [second] 200px;
+            grid-template-rows: 100px 100px 200px; */
         }
 
         .item {
@@ -19,33 +28,35 @@
             width: 60px;
         }
 
-        .item1 {
+        /* .item1 {
             grid-row: 1/2;
             grid-column: 1/2;
-        }
+        } */
 
         /* .item2{
-
-        }
-
-        .item3{
+            align-self: start;
+            justify-self: end;
 
         } */
 
+        /* .item3{
+
+        } */
+        /* 
         .item4 {
-            /* grid-row: 1/2;
-            grid-column: 1/2; */
-            /* or */
+            grid-row: 1/2;
+            grid-column: 1/2;
+            or
             grid-row-start: 1;
             grid-row-end: 2;
             grid-column-start: first;
             grid-column-end: second;
 
-        }
-        .item5{
+        } */
+        /* .item5{
             grid-column-start: first;
             grid-column-end: second;
-        }
+        } */
     </style>
 </head>
 
